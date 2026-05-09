@@ -1,23 +1,12 @@
-## Micronaut 4.10.13 Documentation
+## Demonstrate regression in Micronaut 4.10
 
-- [User Guide](https://docs.micronaut.io/4.10.13/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.10.13/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.10.13/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+Clone the repo and run "./gradlew clean build".
 
-- [Shadow Gradle Plugin](https://gradleup.com/shadow/)
-- [Micronaut Gradle Plugin documentation](https://micronaut-projects.github.io/micronaut-gradle-plugin/latest/)
-- [GraalVM Gradle Plugin documentation](https://graalvm.github.io/native-build-tools/latest/gradle-plugin.html)
-## Feature micronaut-aot documentation
+There will be one test failure.
+
+Edit the gradle.properties and change the micronaut version to 4.9.4 and they will all pass.
 
 
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
-
-
-## Feature serialization-jackson documentation
-
-
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
+The problem being demonstrated is validation of an enum Controller parameter that is Nullable
 
 
